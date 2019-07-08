@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity(), Injectable {
 For Example injection, we have provided the AppModule with a method annotated with @Provide interface to show how to construct the SharedPreferences for us, as shown below:
 
 ```
-    @Provides
-    @Singleton
-    fun providesAppPrefs(context: Application): SharedPreferences {
-        return context.getSharedPreferences(PrefConstants.KEY_APP_SHARED_PREFS, Context.MODE_PRIVATE)
-    }
+@Provides
+@Singleton
+fun providesAppPrefs(context: Application): SharedPreferences {
+     return context.getSharedPreferences(PrefConstants.KEY_APP_SHARED_PREFS, Context.MODE_PRIVATE)
+}
 ```
 
 Similarly you can add dependencies for Room Database, DAO, retrofit, okhttp, gson and much more.
