@@ -18,6 +18,4 @@ class CustomApp: Application(), HasActivityInjector {
     }
 
     override fun activityInjector(): AndroidInjector<Activity> = dispatchingAndroidInjector
-
-
 }
